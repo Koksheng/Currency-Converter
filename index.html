@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency MY</title>
+	<script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		<h1>Currency Malaysia</h1>
+		<input type="text" v-model="a">
+		<label>Malaysian Ringgit</label>
+		<ul>
+			<li>{{usd}} United States Dollar</li>
+			<li>{{a*0.32}} Singapore Dollar</li>
+			<li>{{a*1.65}} Chinese Yuan</li>
+			<li>{{a*7.19}} Thai Baht</li>
+			<li>{{a*0.19}} Pound Sterling</li>
+		</ul>
+		
+	</div>
+	<div id="app1">
+		<h1>BMI Calculator</h1>
+		Player A Body Fat <input type="text" v-model="a1">
+		<br>
+		Player B Body Fat <input type="text" v-model="b1">
+		<ul>
+			<li>
+				Who has the higher fat? ： {{whoHeavy}}
+			</li>
+			<li>
+				What is the heavy different between A and the resident? ： {{judgeA}}
+			</li>
+		</ul>
+	</div>
+
+</body>
+<script src="main.js"></script>
+</html>
